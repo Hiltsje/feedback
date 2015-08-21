@@ -1,8 +1,8 @@
-<h1>My Rails Girls Diary</h1>
+<h1>Your daily feedack analysis</h1>
         <div>
             <% for entry in @entries %>
               <h2><%= entry.title %></h2>
-                <p><%= entry.date %></p>
+                <p><%= entry.created_at %></p>
                 <p><%= entry.contents %></p>
             <% end %>
         </div>
